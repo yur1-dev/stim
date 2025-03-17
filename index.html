@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Facebook sharing meta tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Stims" />
+    <meta
+      property="og:description"
+      content="Get the Stims, Get the Business, Get the Money, Get the Shape, Get the Girl, Get the Life. Build a better future for mankind."
+    />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="Stims" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter sharing meta tags -->
+    <meta name="twitter:title" content="Stims" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:description"
+      content="Get the Stims, Get the Business, Get the Money, Get the Shape, Get the Girl, Get the Life. Build a better future for mankind."
+    />
+    <meta name="twitter:image" content="" />
+
+    <!-- General description -->
+    <meta
+      name="description"
+      content="Stims is the unstoppable token of productivity, success, and happiness."
+    />
+
+    <title>Stims</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="/images/favicon.png"
+      type="image/png"
+      sizes="16x16"
+    />
+
+    <!-- Existing CSS Files -->
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/ui.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+
+    <!-- Optional Inline CSS for Copy Button Effect -->
+    <style>
+      /* Add a special class for the "Copied!" state */
+      #copyBtn.copied {
+        background: #fff !important;
+        color: #000 !important;
+        border: 2px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loading Screen (if applicable) -->
+    <div class="loading active">
+      <div class="loading-container">
+        <img src="/images/stims-logo.png" alt="loading" />
+      </div>
+    </div>
+
+    <div class="main">
+      <!-- Header / Nav -->
+      <header class="clearfix">
+        <div class="container d-flex f-align-center f-justify-between">
+          <!-- Left Logo -->
+          <a href="/" class="logo">
+            <img src="/images/stims-logo.png" alt="Stims Logo" title="Stims" />
+          </a>
+
+          <!-- Nav Links -->
+          <ul class="nav">
+            <!-- External Links with Icons -->
+            <li>
+              <a
+                href="https://dexscreener.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/dexscreener.svg"
+                  alt="DexScreener"
+                  title="DexScreener"
+                  style="height: 64px; width: auto"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://t.me/stims"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/telegram.png"
+                  alt="Telegram"
+                  title="Telegram"
+                  style="height: 64px; width: auto"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/stims"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/x.png"
+                  alt="X (Twitter)"
+                  title="X (Twitter)"
+                  style="height: 64px; width: auto"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://pump.fun/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/pumpfun.png"
+                  alt="Pump.fun"
+                  title="Pump.fun"
+                  style="height: 64px; width: auto"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile Menu Icon (if you use a mobile menu) -->
+        <div id="nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+
+      <!-- HERO SECTION (Section 1) with Background Video -->
+      <section class="hero" id="first">
+        <!-- Background Video -->
+        <div class="bg-video">
+          <video autoplay loop muted playsinline>
+            <source src="/video/bg.mp4" type="video/mp4" />
+            <!-- <source src="/video/bg.webm" type="video/webm" /> -->
+          </video>
+        </div>
+
+        <!-- Foreground Content -->
+        <div class="hero-content container d-flex f-align-center">
+          <!-- Left Column -->
+          <div class="w-50 hero-title">
+            <h1>STIMS IS LIFE</h1>
+            <p>Get the Stims, Get the Business, Get the Money...</p>
+
+            <h2>Contract Address</h2>
+            <div class="contract-box">
+              <!-- Text field containing your contract address -->
+              <input
+                id="contractAddress"
+                type="text"
+                value="0xQM4ijUybhMnaoef6bCkUNS2Gr4uwnGfaT2u2C88yup"
+                readonly
+              />
+              <!-- Button to copy the text -->
+              <button id="copyBtn" class="btn">Copy</button>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="w-50 hero-img d-flex f-justify-center">
+            <img src="/images/hero-img.png" alt="Stims Hero" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- jQuery + Custom JS -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var loaded = false;
+
+      // Hamburger Menu
+      $("#nav-icon").click(function () {
+        $(this).toggleClass("open");
+        $(".nav").toggleClass("open");
+        $("body").toggleClass("fixed");
+      });
+
+      $(window).scroll(function () {
+        activateSections();
+      });
+
+      function activateSections() {
+        var $sections = $(".main section:not(.active)");
+        var windowScrollTop = $(window).scrollTop();
+        var windowHeight = $(window).height();
+
+        $sections.each((index, section) => {
+          var sectionTop = section.offsetTop;
+          if (loaded && sectionTop - windowScrollTop < windowHeight / 2) {
+            $(section).addClass("active");
+          }
+        });
+      }
+
+      // Loading
+      (function () {
+        const minLoadingTime = 500; // milliseconds
+        const readyTime = new Date();
+
+        $(window).load(function () {
+          const loadingInterval = setInterval(() => {
+            const now = new Date();
+            if (now - readyTime > minLoadingTime) {
+              loaded = true;
+              hideLoading();
+              activateSections();
+              clearInterval(loadingInterval);
+            }
+          }, 100);
+        });
+      })();
+
+      function hideLoading() {
+        $(".loading").animate({ opacity: 0 }, 400, function () {
+          $(".loading").hide();
+        });
+      }
+
+      const copyBtn = document.getElementById("copyBtn");
+      copyBtn.addEventListener("click", function () {
+        const address = document.getElementById("contractAddress").value;
+        navigator.clipboard.writeText(address).then(() => {
+          copyBtn.textContent = "Copied!";
+          copyBtn.classList.add("copied");
+          setTimeout(() => {
+            copyBtn.textContent = "Copy";
+            copyBtn.classList.remove("copied");
+          }, 2000);
+        });
+      });
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

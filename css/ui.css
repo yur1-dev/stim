@@ -1,0 +1,178 @@
+/* ==========================================================================
+   User Interface
+   ========================================================================== */
+
+/* Button General */
+
+.btn {
+  display: inline-block;
+  opacity: 1;
+  padding: 2px 30px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 46px;
+  font-weight: bold;
+  font-family: var(--font-title);
+  box-sizing: border-box;
+  border: 2px solid var(--color-primary);
+  cursor: pointer;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: all 0.4s;
+  text-transform: uppercase;
+}
+
+/* Button Default */
+
+.btn-dark {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-dark:hover {
+  color: var(--color-dark);
+  background: var(--color-white);
+}
+
+.btn img {
+  margin-left: 10px;
+  transition: 0.2s all;
+}
+
+.btn:hover img {
+  margin-left: 15px;
+}
+/* Form Inputs */
+
+input,
+textarea {
+  border: 2px solid var(--color-red);
+  padding: 10px 20px;
+  background: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: var(--font-title);
+  outline: none;
+  box-sizing: border-box;
+}
+
+input {
+  height: 60px;
+  width: 48%;
+}
+
+textarea {
+  height: 150px;
+  width: 100%;
+}
+
+/* Error Messages */
+
+.message-error {
+  color: var(--color-messageError);
+}
+
+.message-success {
+  color: var(--color-messageSuccess);
+}
+
+form .field.field-error {
+  border-color: var(--color-fieldError);
+}
+
+form.form-loading button .icon {
+  display: inline-block;
+}
+
+form.form-loading button .text {
+  display: none;
+}
+
+/* Arrow Down Icon*/
+
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+
+.icon-scroll {
+  width: 30px;
+  height: 50px;
+  margin-left: -20px;
+  border-radius: 25px;
+}
+
+.icon-scroll {
+  content: url("/img/arrow-down.svg");
+  width: 16px;
+  height: 16px;
+  margin-left: -8px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+.scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  margin-left: -25px;
+  border: 2px solid var(--color-white);
+  height: 50px;
+  width: 50px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-down .icon-arrow-down {
+  position: absolute;
+  font-size: 28px;
+  margin-top: -5px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+.scroll--mouse {
+  display: block;
+  width: 3px;
+  padding: 3px 10px;
+  height: 30px;
+  border: 3px solid var(--color-white);
+  border-radius: 25px;
+  opacity: 1;
+  box-sizing: content-box;
+  margin-top: 5%;
+}
+
+.scroll--mouse::after {
+  content: "";
+  width: 3px;
+  height: 10px;
+  display: block;
+  border-radius: 25%;
+  background-color: var(--color-secondary);
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  0% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    opacity: 0;
+    transform: translateY(26px);
+  }
+}

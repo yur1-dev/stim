@@ -1,0 +1,285 @@
+/* ==========================================================================
+   Responsive styles
+   ========================================================================== */
+
+/* Wide Screens */
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+  .container {
+    max-width: 1920px;
+    margin: 0px auto;
+  }
+}
+
+/* Desktop */
+
+@media (max-width: 1600px) {
+}
+
+/* Desktop Small */
+
+@media (max-width: 1400px) {
+}
+
+/* Laptop */
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1600px) {
+  .container {
+    width: 90% !important;
+  }
+  h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .hero-img img,
+  .second-img img,
+  .third-img img {
+    width: 60vh;
+  }
+
+  .third::before {
+    height: 170px;
+  }
+}
+
+/* Tablet Landscape */
+
+@media (max-width: 1024px) {
+  section {
+    height: inherit;
+  }
+
+  .container {
+    width: 80% !important;
+  }
+
+  .hero .container,
+  .third .container {
+    flex-direction: column-reverse;
+  }
+
+  .second .container {
+    flex-direction: column;
+  }
+
+  .hero-img img,
+  .second-img img,
+  .third-img img {
+    height: 30vh;
+  }
+
+  .w-50 {
+    width: 100% !important;
+  }
+
+  .hero-title,
+  .second .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 5vh;
+  }
+
+  .w-50 {
+    align-items: center;
+  }
+
+  .second-img {
+    margin-bottom: 5vh;
+  }
+
+  .third .container .w-50 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .third .container {
+    margin-top: 10vh;
+  }
+
+  .hero-title {
+    z-index: 99;
+  }
+}
+
+/* Tablet Portrait */
+
+@media (max-width: 980px) {
+}
+
+/* Macbook 13 Inch */
+
+@media (min-device-width: 700px) and (max-device-width: 1200px) {
+}
+
+/* Mobile Landscape */
+
+@media (max-width: 768px), (orientation: landscape) and (max-height: 500px) {
+  #nav-icon {
+    display: block;
+    z-index: 999;
+  }
+
+  header .nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100vh;
+    background: var(--color-secondary);
+    transition: width 0.4s;
+    z-index: 9;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  header .nav.open {
+    width: 100vw;
+  }
+
+  header .nav li {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    width: 70vw;
+  }
+
+  header .nav li a {
+    display: block;
+    padding: 15px;
+    font-size: 24px;
+    z-index: 9999;
+  }
+  .container-small {
+    width: 80%;
+  }
+  .f-grid-one-third {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+}
+
+/* Mobile Large */
+
+@media (max-width: 642px) {
+  .spirit {
+    flex-direction: column;
+  }
+
+  .movement {
+    padding: 50px 10px;
+    width: 80%;
+  }
+
+  .cta-text {
+    line-height: 30px;
+  }
+
+  .main section {
+    height: inherit;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  h4 {
+    font-size: 17px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  header .container {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .hero {
+    height: 100vh !important;
+  }
+
+  .hero::after {
+    top: 110vh;
+  }
+
+  header .logo img {
+    width: 120px;
+  }
+
+  .hero-title {
+    margin-top: 0;
+  }
+
+  .roadmap {
+    margin-top: 10vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+  }
+
+  .big-type {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .copyright {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  .copyright div {
+    margin-bottom: 20px;
+  }
+
+  .line:after {
+    display: none;
+  }
+
+  .third-img {
+    margin-bottom: 5vh;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 375px) {
+  h1 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
